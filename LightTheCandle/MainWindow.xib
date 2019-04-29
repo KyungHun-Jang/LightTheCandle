@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="fNa-Xz-egh" id="0sy-Le-YD2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <customObject id="fNa-Xz-egh" customClass="AppDelegate" customModule="LightTheCandle" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="u9a-7u-fZx" id="4TI-6H-Nhj"/>
+            </connections>
+        </customObject>
+        <window contentMode="scaleToFill" resizesToFullScreen="NO" id="u9a-7u-fZx">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <viewLayoutGuide key="safeArea" id="0KZ-Od-ehr"/>
+            <connections>
+                <outlet property="rootViewController" destination="AOj-mk-4aW" id="xgE-1s-bTJ"/>
+            </connections>
+        </window>
+        <viewController id="AOj-mk-4aW" customClass="MainViewController" customModule="LightTheCandle" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="F6A-wF-xJH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE4-up-K3G">
+                        <rect key="frame" x="16" y="40" width="288" height="474"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFh-zq-6Xe">
+                        <rect key="frame" x="16" y="527" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8pF-Du-iv2">
+                        <rect key="frame" x="255" y="522" width="49" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="touchSwitch:" destination="AOj-mk-4aW" eventType="valueChanged" id="FaX-cC-UMD"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <viewLayoutGuide key="safeArea" id="duq-9v-jQ6"/>
+            </view>
+            <connections>
+                <outlet property="labelStatus" destination="PFh-zq-6Xe" id="cpF-Rg-gN1"/>
+                <outlet property="switchNow" destination="8pF-Du-iv2" id="f6t-2w-irA"/>
+                <outlet property="viewImage" destination="bE4-up-K3G" id="Ra2-eY-eJk"/>
+            </connections>
+            <point key="canvasLocation" x="48.75" y="54.929577464788736"/>
+        </viewController>
+    </objects>
+</document>
