@@ -15,5 +15,6 @@ class MainViewController : UIViewController{
     
     @IBAction func touchSwitch(_ sender:Any){
         print("switch touched!!")
+        print("test")
     }
 }
