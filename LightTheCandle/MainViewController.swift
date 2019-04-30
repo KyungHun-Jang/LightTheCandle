@@ -13,8 +13,25 @@ class MainViewController : UIViewController{
     @IBOutlet weak var labelStatus:UILabel!
     @IBOutlet weak var switchNow:UISwitch!
     
-    @IBAction func touchSwitch(_ sender:Any){
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.switchNow.isOn = false
+        self.touchSwitch(self.switchNow)
+    }
+    
+    @IBAction func touchSwitch(_ sender:Any?){
         print("switch touched!!")
-        print("test")
+        let s = sender as? UISwitch
+        let flag = s?.isOn
+        
+        if flag == true {
+            self.viewImage.image = UIImage(named: "CandleOn")
+            self.labelStatus.text = "Candle is now on !!"
+        }
+        else {
+            self.viewImage.image = UIImage(named: "CandleOff")
+            self.labelStatus.text = "Candle is now off !!"
+        }
     }
 }

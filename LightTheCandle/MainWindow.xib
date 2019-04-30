@@ -28,6 +28,7 @@
             <connections>
                 <outlet property="rootViewController" destination="AOj-mk-4aW" id="xgE-1s-bTJ"/>
             </connections>
+            <point key="canvasLocation" x="-1206" y="200"/>
         </window>
         <viewController id="AOj-mk-4aW" customClass="MainViewController" customModule="LightTheCandle" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="F6A-wF-xJH">
@@ -39,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFh-zq-6Xe">
-                        <rect key="frame" x="16" y="527" width="42" height="21"/>
+                        <rect key="frame" x="16" y="527" width="223" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -61,7 +62,7 @@
                 <outlet property="switchNow" destination="8pF-Du-iv2" id="f6t-2w-irA"/>
                 <outlet property="viewImage" destination="bE4-up-K3G" id="Ra2-eY-eJk"/>
             </connections>
-            <point key="canvasLocation" x="48.75" y="54.929577464788736"/>
+            <point key="canvasLocation" x="-525" y="199.64788732394368"/>
         </viewController>
     </objects>
 </document>
